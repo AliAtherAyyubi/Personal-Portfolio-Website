@@ -1,0 +1,49 @@
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Distribute items evenly */
+    gap: 5rem; /* Space between items */
+    margin: 2rem 0;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Ensure four equal-width columns with space */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.contact-icon {
+    font-size: 30px;
+    color: #FFC107; /* Yellow color for icons */
+    /* margin-bottom: 10px; */
+}
+
+.contact-title {
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-bottom: 5px; */
+    color: white; /* Dark text color */
+}
+
+.contact-info {
+    font-size: 14px;
+    color: white; /* Subtle text color for info */
+}
+
+@media (max-width: 768px) {
+    .contact-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-item {
+        flex: 1 1 100%; /* One item per row on small screens */
+    }
+}

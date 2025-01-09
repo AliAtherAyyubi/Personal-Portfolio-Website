@@ -1,0 +1,51 @@
+
+.social-icon-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 3%;
+    bottom: 20%;
+    z-index: 1000;
+}
+
+.social-icon-sidebar i{
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 35px;
+    transition: all 0.2s ease;
+}
+
+.social-icon-sidebar i:hover{
+    color: rgb(255, 42, 0);
+}
+
+.social-icon-sidebar .line{
+    position: fixed;
+    height: 20%;
+    width: 1px;
+    background-color: white;
+    bottom: 0%;
+}
+
+@media screen and (max-width: 580px){
+    .social-icon-sidebar{
+        background-color: grey;
+        padding: 10px 20px;
+        flex-direction: row;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .social-icon-sidebar i{
+        margin: 0 15px;
+        margin-bottom: 0;
+    }
+
+    .social-icon-sidebar .line{
+        display: none;
+    }
+}

@@ -1,0 +1,153 @@
+/* About */
+.about-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.left-about {
+    width: 60%;
+}
+.left-about p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+}
+.left-about h4 {
+    font-size: 2rem;
+    padding-block: 15px;
+    text-align: center;
+}
+
+.left-about h4 span {
+    color: var(--color-secondary);
+}
+
+.skills h2 {
+    position: relative;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.skills span {
+    color: var(--color-secondary);
+}
+
+
+/* .skills h2 {
+    font-size: 3rem;
+    top: 10px;
+} */
+.s-t {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 2% 0;
+}
+.skill-list{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+}
+.skill-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+.skill-text {
+    display: flex;
+    border: 1px solid;
+    border-radius: 14px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1% 13px;
+
+    width: 200px;
+    padding-block: 4px;
+    transition: all 0.4s ease-in-out;
+}
+
+.skill-text:hover {
+    transform: scale(1.1);
+    --angle: 0deg;
+    border-image: linear-gradient(var(--angle), #ffd800, var(--color-secondary), #750cf2, #0cbcf2) 1;
+    animation: 2s rotate linear infinite;
+    border-radius: 14px;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+.skill-img {
+    width: 51px;
+    height: 51px;
+}
+
+/* education  */
+
+#education h2{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 4%;
+}
+#education .edu-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#education .logo{
+    height: 150px;
+    width: 170px;
+    margin-right: 10px;
+}
+.edu-content h3{
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+.edu #courses{
+    font-size: 14px;
+    color: #c7c7c7;
+}
+
+@media (max-width:768px) {
+    /* .sec-2{
+        padding: 2rem 7rem;
+    } */
+    #education{
+        padding: 0px 1rem;
+    }
+    /* #education h2{
+        font-size: 3rem;
+    } */
+    #education .edu-content{
+        flex-direction: column;
+    }
+    .edu-content .logo{
+        margin-bottom: 1rem;
+    }
+    .left-about{
+        width: 100%;
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .left-about{
+        padding: 2rem;
+    }
+    
+}
