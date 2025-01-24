@@ -9,18 +9,35 @@ var allSections = document.querySelector(".main-contents");
 
 
 // Navbar //
+
 let lastScrollTop = 0;
 window.addEventListener("scroll", function() {
     let navbar = document.getElementById("navbar");
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
-        navbar.style.top = "-50px"; // Adjust this value based on your navbar height
+    if (scrollTop < lastScrollTop) {
+        navbar.style.top = "10px"; // Adjust this value based on your navbar height
     } else {
-        navbar.style.top = "20px";
+        navbar.style.top = "-50px";
     }
     lastScrollTop = scrollTop;
 });
+//
+// Select all the nav links
+const navLinks = document.querySelectorAll('.nav-links li a');
+
+// Add a click event listener to each nav link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Remove the 'active' class from all links
+    navLinks.forEach(nav => nav.classList.remove('active'));
+
+    // Add the 'active' class to the clicked link
+    link.classList.add('active');
+  });
+});
+
+
 //
 function transitions() {
     for (i = 0; i < btns.length; i++) {
@@ -123,7 +140,7 @@ function submitForm(event) {
 
     // Display alert message
     alert(
-        "This feature is unavailable currently,please send an email to bakareoafolabi@gmail.com"
+        "Your message has been sent successfully. I will get back to you soon."
     );
 
     // Clear the form details
