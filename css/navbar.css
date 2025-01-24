@@ -17,6 +17,7 @@
 
   backdrop-filter: blur(20px);
 background: rgba(131, 131, 131, 0.5);
+transition: all 0.3s ease;
   /* box-shadow: 0 5px 10px rgba(0,0,0,0.2); */
 }
 .nav-links li{
@@ -38,10 +39,24 @@ background: rgba(131, 131, 131, 0.5);
   left: 0;
   height: 3px;
   width: 0%;
-  background: red;
+  background: var(--color-secondary);
   border-radius: 12px;
   transition: all 0.4s ease;
 }
-.nav-links li a:hover:before{
+.nav-links li a:hover::before{
   width: 100%;
+}
+.nav-links li a.active:before {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .nav-links {
+    margin: 0px 80px;
+  }
+
+  .nav-links li{
+    margin: 0 10px;
+  }
 }

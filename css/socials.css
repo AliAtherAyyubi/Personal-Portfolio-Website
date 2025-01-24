@@ -18,7 +18,7 @@
 }
 
 .social-icon-sidebar i:hover{
-    color: rgb(255, 42, 0);
+    color: var(--color-secondary);
 }
 
 .social-icon-sidebar .line{
@@ -29,21 +29,12 @@
     bottom: 0%;
 }
 
-@media screen and (max-width: 580px){
+@media screen and (max-width: 768px){
     .social-icon-sidebar{
-        background-color: grey;
-        padding: 10px 20px;
-        flex-direction: row;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        justify-content: space-between;
+        display: none;
     }
     
-    .social-icon-sidebar i{
-        margin: 0 15px;
-        margin-bottom: 0;
-    }
+    
 
     .social-icon-sidebar .line{
         display: none;

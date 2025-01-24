@@ -1,0 +1,132 @@
+.experience-section {
+    padding: 0rem 2rem;
+    background: #1e1e1e; /* Dark background */
+    color: #f0f0f0; /* Light text for better contrast */
+    margin-top: 3rem;
+  }
+  
+  .exp-main-title {
+    text-align: center;
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+  }
+  
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-left: 2rem;
+  }
+  
+  .experience-column {
+    width: 100%;
+    max-width: 60%;
+    position: relative;
+  }
+  
+  .experience-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2.5rem;
+  }
+  
+  .bullet {
+    position: absolute;
+    left: 0;
+    top: 0.3rem;
+    width: 12px;
+    height: 12px;
+    background: var(--color-secondary); /* Primary color for the bullet */
+    border-radius: 50%;
+    box-shadow: 0 0 6px var(--color-secondary);
+    z-index: 1;
+  }
+  
+  .experience-item::before {
+    content: '';
+    position: absolute;
+    left: 6px; /* Aligns the line with the bullet */
+    top: 1.2rem;
+    bottom: -2rem;
+    width: 2px;
+    background: #555; /* Line color */
+    z-index: 0;
+  }
+  
+  .experience-item:last-child::before {
+    bottom: 0; /* Remove line after the last item */
+  }
+  
+  .experience-title {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-company-dates {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-company {
+    font-weight: bold;
+    color: #f1f1f1;
+    font-size: 1rem;
+  }
+  
+  .experience-dates {
+    font-style: italic;
+    color: #cccccc;
+    font-size: 0.9rem;
+  }
+  
+  
+  .experience-details {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .experience-details li {
+    font-size: 0.9rem;
+    color: #dddddd;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .experience-details li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-secondary); /* Primary color */
+    font-size: 1rem;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    
+    .experience-column {
+      max-width: 70%;
+    }
+    
+  }
+  @media screen and (max-width: 768px) {
+    
+    .experience-column {
+      max-width: 80%;
+    }
+    
+  }
+  @media screen and (max-width: 480px) {
+     .exp-main-title{
+      font-size: 3rem;
+     }
+  .experience-column {
+    max-width: 100%;
+  }
+  }

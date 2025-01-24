@@ -5,12 +5,12 @@
     width: 100%;
 }
 .left-about {
-    width: 60%;
+    width: 50%;
 }
 .left-about p {
     font-size: 16px;
     text-align: justify;
-    line-height: 1.8rem;
+    line-height: 1.5rem;
     letter-spacing: 1px;
 }
 .left-about h4 {
@@ -99,6 +99,9 @@
 
 /* education  */
 
+#education{
+    margin: 3rem 0;
+}
 #education h2{
     font-size: 4rem;
     text-align: center;
@@ -124,6 +127,22 @@
     color: #c7c7c7;
 }
 
+/* Media Queries */
+@media (max-width: 1024px) {
+    .left-about {
+        width: 80%;
+    }
+    .skill-flex {
+        width: 90%;
+    }
+    .skill-text {
+        width: 180px;
+    }
+    .skill-img {
+        width: 45px;
+        height: 45px;
+    }
+}
 @media (max-width:768px) {
     /* .sec-2{
         padding: 2rem 7rem;

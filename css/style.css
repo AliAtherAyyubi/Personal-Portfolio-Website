@@ -247,10 +247,6 @@ a {
 }
 
 
-.sec-3 {
-    padding: 3rem 0;
-}
-
 .image img {
     max-width: 100%;
     height: inherit;
@@ -300,7 +296,7 @@ a {
 
 .input-subject,
 .input-textarea {
-    width: 84%;
+    width: 100%;
     padding: 10px 20px;
     outline: none;
     background: #050505;
@@ -317,9 +313,9 @@ a {
 }
 
 .input-name {
-    width: 40%;
+    width:100%;
     padding: 10px 20px;
-    margin: 14px;
+    /* margin: 14px; */
     border-radius: 8px;
     outline: none;
     background: #050505;
@@ -340,7 +336,8 @@ form {
     flex-direction: column;
     width: auto;
     position: relative;
-    gap: 22px;
+    gap: 30px;
+    margin-top: 1rem;
 }
 
 .submit {
@@ -579,6 +576,7 @@ textarea {
     .auto-input {
         text-align: center;
         font-size: 26px !important;
+
     }
     .settings {
         display: none !important;
@@ -606,7 +604,7 @@ textarea {
     /* contactme */
     
     .contact-content-con {
-        flex-direction: column;
+        /* flex-direction: column; */
         padding: 33px 3rem;
     }
     .input-line {
@@ -689,6 +687,7 @@ textarea {
     .auto-input {
         text-align: center;
         font-size: 26px !important;
+        margin: 7rem 0 !important;
     }
 }
 

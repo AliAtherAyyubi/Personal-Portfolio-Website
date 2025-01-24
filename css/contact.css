@@ -3,14 +3,16 @@
     flex-wrap: wrap;
     justify-content: center; /* Distribute items evenly */
     gap: 5rem; /* Space between items */
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
 .contact-item {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 2rem; /* Ensure four equal-width columns with space */
-    text-align: center;
+    /* text-align: center; */
+    align-items: center;
     transition: transform 0.3s ease;
 }
 
@@ -36,14 +38,32 @@
     color: white; /* Subtle text color for info */
 }
 
+.right-contact{
+    width: 40%;
+}
+
+@media (max-width: 1024px) {
+    .contact-row{
+        gap: 3rem; /* Space between items */
+    }
+}
 @media (max-width: 768px) {
+    .contact-row{
+         gap: 2rem; /* Space between items */
+    }
     .contact-item {
         flex: 1 1 calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+    .right-contact{
+        width: 80%;
     }
 }
 
 @media (max-width: 480px) {
     .contact-item {
         flex: 1 1 100%; /* One item per row on small screens */
+    }
+    .right-contact{
+        width: 100%;
     }
 }
