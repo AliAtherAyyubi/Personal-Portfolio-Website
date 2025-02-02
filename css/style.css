@@ -41,14 +41,12 @@ a {
 .section{
     margin-top: 5%;
 }
-/* .home{
-    margin-top: 7rem;
-} */
+
 .portfolio-circle{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90%;
+    height: 100%;
     width: 80%;
     margin-left: 4rem;
     border-radius: 50%;
@@ -67,9 +65,10 @@ a {
 
 .header-content {
     display: grid;
-    /* justify-content: center;
-    align-items: center; */
-
+    /* gap: 2rem; */
+    /* justify-content: center; */
+    /* align-items: center;  */
+    /* margin-top: 3rem; */
     grid-template-columns: repeat(2, 1fr);
     /* height: 100%; */
 }
@@ -588,6 +587,7 @@ textarea {
     
     .header-content {
         grid-template-columns: 1fr;
+        /* flex-direction: column; */
     }
     .portfolio-circle {
         margin: 0;
