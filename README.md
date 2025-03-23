@@ -26,7 +26,6 @@ Check out the live version of the website here: [Live Demo](https://aliather.net
 - **Skills Section**: Highlights my technical skills and tools I use.
 - **Contact Form**: Allows visitors to send me a message directly.
 - **Responsive Design**: Optimized for mobile, tablet, and desktop screens.
-- **Dark/Light Mode**: Toggle between light and dark themes for better user experience.
 
 ---
 
@@ -34,19 +33,13 @@ Check out the live version of the website here: [Live Demo](https://aliather.net
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/personal-portfolio.git
+   git clone https://github.com/aliatherayyubi/personal-portfolio.git
    ```
 2. **Navigate to the project folder**:
    ```bash
-   cd personal-portfolio
+   cd personal-portfolio-website
    ```
 3. **Open the `index.html` file** in your browser to view the website.
-
----
-
-## 📸 Screenshots
-
-*(Add screenshots of your website here)*
 
 ---
 
